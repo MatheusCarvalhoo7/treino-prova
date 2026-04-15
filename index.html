@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Controle de Gastos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- topo da página -->
+    <header class="banner">
+        <section class="banner-content">
+            <h1>Controle de Gastos</h1>
+            <!-- título principal -->
+        </section>
+    </header>
+
+    <main>
+
+        <!-- seção do formulário -->
+        <section id="formulario" class="categoria">
+            <h2>Adicionar Gasto</h2>
+
+            <!-- formulário (JS vai pegar os dados daqui) -->
+            <form id="formGasto">
+
+                <!-- campo descrição -->
+                <input type="text" id="descricao" placeholder="Descrição" required>
+
+                <!-- campo valor -->
+                <input type="number" id="valor" placeholder="Valor" required>
+
+                <!-- campo categoria -->
+                <input type="text" id="categoria" placeholder="Categoria" required>
+
+                <!-- botão adicionar -->
+                <button type="submit">Adicionar</button>
+
+            </form>
+        </section>
+
+
+        <!-- seção da lista -->
+        <section id="lista">
+            <h2>Seus Gastos</h2>
+
+            <!-- lista que o JS vai preencher -->
+            <ul id="lista-gastos">
+                <!-- itens aparecem aqui -->
+            </ul>
+
+            <!-- total dos gastos -->
+            <p id="total">Total: R$ 0,00</p>
+        </section>
+
+    </main>
+
+    <!-- rodapé -->
+    <footer>
+        <p>&copy;2026 Projeto Front-End</p>
+    </footer>
+
+    <!-- JS sempre no final -->
+    <script src="script.js"></script>
+
+</body>
+</html>
