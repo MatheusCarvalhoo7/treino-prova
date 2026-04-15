@@ -1,0 +1,126 @@
+/* reset básico */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* cabeçalho */
+header{
+    background-color: #ff9800;
+    color:#fff;
+    text-align: center;
+    padding: 1rem 0; /* espaço em cima e embaixo */
+}
+
+/* banner principal */
+.banner{
+    background-color:#ffaa00;
+    height: 200px;
+
+    display: flex; /* centraliza o conteúdo */
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 4px 2px rgba(0,0,0,0.5);
+}
+
+/* largura do conteúdo do banner */
+.banner-content{
+    width: 80%;
+}
+
+/* título principal */
+.banner-content h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* conteúdo principal da página */
+main{
+    width: 80%;
+    margin: 2rem auto; /* centraliza na tela */
+}
+
+/* espaço entre seções */
+.categoria{
+    margin-bottom: 2rem;
+}
+
+/* formulário (organiza em coluna) */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* inputs */
+input{
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* botão padrão */
+button{
+    background-color: #ffc401;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* efeito ao passar o mouse */
+button:hover{
+    background-color: #e0aa00;
+}
+
+/* área da lista */
+#lista{
+    background-color: #FFBD14;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* remove bolinhas da lista */
+#lista-gastos{
+    list-style: none;
+    padding: 0;
+}
+
+/* cada item da lista */
+#lista-gastos li{
+    background-color: white;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: space-between; /* separa texto e botão */
+    align-items: center;
+}
+
+/* total */
+#total{
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/* rodapé */
+footer{
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #502314;
+    color: #fff;
+}
+
+/* responsivo básico */
+@media (min-width: 768px){
+    main{
+        width: 60%;
+    }
+}
